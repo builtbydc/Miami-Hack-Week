@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Miami Hack Week</title>
+    <title>Gathering</title>
     <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script src="./script.js"></script>
+
+    <link rel="manifest" href="./manifest.webmanifest" crossorigin="use-credentials">
+
+    <link rel="icon" href="./favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 
-<body>
+<body onload="registerServiceWorker();">
     <header>
         <div class="w80">
             <h1>Gathering</h1>
         </div>
-
         <div class="w20">
             <p onclick="toggleNav();">&#xe020;</p>
         </div>
     </header>
 
-    <nav id="nav-menu" class="hidden">
-        <a href="" onclick="toggleNav();">Link</a>
-        <a href="" onclick="toggleNav();">Link</a>
-        <a href="" onclick="toggleNav();">Link</a>
+    <nav id="nav-menu" class="hidden" onclick="toggleNav();">
+        <a href=" ">Link</a>
+        <a href=" ">Link</a>
+        <a href=" ">Link</a>
     </nav>
 </body>

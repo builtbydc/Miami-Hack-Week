@@ -1,0 +1,22 @@
+{
+    "name": "Gathering",
+    "short_name": "Gathering",
+    "icons": [{
+            "src": "./g-icon192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./g-icon512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "./index.html",
+    "background_color": "#ffffff",
+    "display": "fullscreen",
+    "scope": "./",
+    "theme_color": "#000000",
+    "orientation": "portrait",
+    "description": "An app created for Miami Hack Week."
+}
