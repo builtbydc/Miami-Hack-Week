@@ -13,10 +13,10 @@
         }
     ],
     "start_url": "./index.html",
-    "background_color": "#000000",
+    "background_color": "#ff0000",
     "display": "fullscreen",
     "scope": "./",
-    "theme_color": "#ffffff",
+    "theme_color": "#00ff00",
     "orientation": "portrait",
     "description": "An app created for Miami Hack Week."
 }
