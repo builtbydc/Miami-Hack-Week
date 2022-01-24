@@ -51,6 +51,7 @@ header h1 {
     height: 100%;
     align-items: center;
     padding-left: 1rem;
+    cursor: pointer;
 }
 
 header p {
@@ -62,6 +63,7 @@ header p {
     align-items: center;
     justify-content: center;
     box-shadow: -1px 0 0 0 black;
+    cursor: pointer;
 }
 
 nav {
@@ -78,6 +80,7 @@ nav>a {
     text-decoration: none;
     color: black;
     box-shadow: 0 1px 0 0 black;
+    cursor: pointer;
 }
 
 nav>a:active {
