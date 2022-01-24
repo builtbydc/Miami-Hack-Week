@@ -3,19 +3,22 @@
 <head>
     <title>Miami Hack Week</title>
     <link rel="stylesheet" href="./style.css">
-    <meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./script.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Gathering</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="">Calendar</a></li>
-            <li><a href="">Map</a></li>
-            <li><a href="">Link</a></li>
-            <li><a href="">Link</a></li>
-        </ul>
-    </nav>
+    <div class="topnav">
+        <a href="#home" class="title active">Gathering</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            &#xe020;
+        </a>
+    </div>
 </body>

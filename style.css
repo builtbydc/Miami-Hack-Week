@@ -13,35 +13,78 @@
     src: url("./pacifico.ttf");
 }
 
+@font-face {
+    font-family: "dripicons";
+    src: url("./dripicons-v2.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "pacifico", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-header {
-    position: relative;
-    top: 0;
-    height: 10vh;
-    width: 100vw;
-    background-color: cyan;
 
+/* Style the navigation menu */
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+.topnav #myLinks {
+    display: none;
+}
+
+
+/* Style navigation menu links */
+
+.topnav a {
+    color: white;
+    padding: 0.875rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+}
+
+.topnav a.title {
+    font-size: 2rem;
+    font-family: "pacifico";
+}
+
+
+/* Style the hamburger menu */
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: "dripicons";
+    height: 3.5rem;
+    width: 2rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-nav {
-    width: 100vw;
-    top: 10vh;
 
+/* Add a grey background color on mouse-over */
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
-nav > ul {
-    font-size: 0;
-}
 
-nav > ul > li {
-    font-size: 1rem;
-    display: inline-block;
-    width: 25vw;
+/* Style the active link (or home/logo) */
+
+.active {
+    background-color: #04AA6D;
+    color: white;
 }
