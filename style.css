@@ -19,6 +19,10 @@ html {
     background-color: black;
 }
 
+body {
+    background-color: white;
+}
+
 html,
 body {
     height: 100vh;
