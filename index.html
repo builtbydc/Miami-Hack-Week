@@ -8,17 +8,19 @@
 </head>
 
 <body>
-    <div class="topnav">
-        <a href="#home" class="title active">Gathering</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+    <header>
+        <div class="w80">
+            <h1>Gathering</h1>
         </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            &#xe020;
-        </a>
-    </div>
+
+        <div class="w20">
+            <p onclick="toggleNav();">&#xe020;</p>
+        </div>
+    </header>
+
+    <nav id="nav-menu" class="hidden">
+        <a href="" onclick="toggleNav();">Link</a>
+        <a href="" onclick="toggleNav();">Link</a>
+        <a href="" onclick="toggleNav();">Link</a>
+    </nav>
 </body>
