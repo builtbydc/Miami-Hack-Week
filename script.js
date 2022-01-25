@@ -5,6 +5,10 @@ function toggleNav() {
         document.getElementById("nav-menu").classList.add("hidden");
 }
 
+function hideNav() {
+    document.getElementById("nav-menu").classList.add("hidden");
+}
+
 function registerServiceWorker() {
 
     if ('serviceWorker' in navigator) {
