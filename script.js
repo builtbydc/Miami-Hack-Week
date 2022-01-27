@@ -13,7 +13,7 @@ var options = {
     maximumAge: 0
 };
 let global_lat = 25.9420;
-let global_lng = 80.2456;
+let global_lng = -80.2456;
 let global_zoom = 8;
 
 function success(pos) {
