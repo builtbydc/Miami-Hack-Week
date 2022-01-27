@@ -33,15 +33,16 @@
 body {
     background-color: var(--clr-blk);
 }
+
 #map {
     position: absolute;
-    z-index: 1000;
-    top: 10vw;
-    left: 25vw;
-    width: 50vw;
-    height: 75vh;
-
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 5rem);
 }
+
 html,
 body {
     height: 100vh;
@@ -119,7 +120,7 @@ header {
     display: block;
     width: 100vw;
     height: 5rem;
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.255);
+    box-shadow: 0 1px 0 0 var(--clr-blk);
     background-color: var(--clr-wht);
 }
 
