@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: "concord";
+    src: url("./concord.ttf");
+}
+
+@font-face {
     font-family: "dripicons";
     src: url("./dripicons-v2.ttf");
 }
@@ -71,13 +76,13 @@ body {
 }
 
 #splash-screen * {
-    margin: 1rem;
+    margin: 0.75rem;
     color: var(--clr-blk);
 }
 
 #splash-screen img {
-    width: 25vw;
-    height: 25vw;
+    width: 75vw;
+    height: 75vw;
     border-radius: 5vw;
 }
 
@@ -87,7 +92,9 @@ body {
 }
 
 #splash-screen p {
-    font-size: 1rem;
+    font-family: "concord";
+    font-size: 1.25rem;
+    font-weight: lighter;
 }
 
 header {
