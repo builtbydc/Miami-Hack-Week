@@ -1,7 +1,7 @@
 :root {
-    --clr-wht: #ffffff;
+    --clr-wht: #fbf8ef;
     --clr-blk: #000000;
-    --clr-act: gainsboro;
+    --clr-act: #e5e0d7;
 }
 
 @font-face {
@@ -80,10 +80,21 @@ body {
     color: var(--clr-blk);
 }
 
+#splash-screen img~p {
+    margin-top: 1.25rem;
+}
+
 #splash-screen img {
     width: 75vw;
     height: 75vw;
     border-radius: 5vw;
+}
+
+@media only screen and (min-width: 600px) {
+    #splash-screen img {
+        width: 35vh;
+        height: 35vh;
+    }
 }
 
 #splash-screen h1 {
