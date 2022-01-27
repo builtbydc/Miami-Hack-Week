@@ -33,15 +33,16 @@
 body {
     background-color: var(--clr-blk);
 }
+
 #map {
     position: absolute;
-    z-index: 1000;
-    top: 10vw;
-    left: 25vw;
-    width: 50vw;
-    height: 75vh;
-
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 5rem);
 }
+
 html,
 body {
     height: 100vh;
@@ -154,14 +155,8 @@ header a {
     color: var(--clr-blk);
 }
 
-header h1 {
-    font-family: "pacifico";
-    font-size: 2rem;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    padding-left: 1rem;
-    cursor: pointer;
+header img {
+    height: 5rem;
 }
 
 header p {

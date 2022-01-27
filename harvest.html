@@ -20,26 +20,11 @@
 </head>
 
 <body onload="registerServiceWorker();">
-    <div id="splash-screen">
-        <img src="./SplashScreenLogo.png" alt="app icon">
-        <p>Gather Food</p>
-        <p>Gather People</p>
-        <p>Gather Together</p>
-    </div>
-    <body>
-        <div id="map"></div>
-    
-        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-        <script
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsP83RrbLdZGFINRp_CNPCr2x3wdrm54E&callback=initMap&v=weekly"
-          async
-        ></script>
-
-    </body>
     <div id="background"></div>
     <header>
         <div class="w80">
-                <h1><a href="index.html">Gathering</a></h1>
+            <a href="">
+                <img src="./logo.png" alt="Gathering logo">
             </a>
         </div>
         <div class="w20">
@@ -51,9 +36,12 @@
         <a href=" ">Link</a>
         <a href=" ">Link</a>
         <a href=" ">Link</a>
-
     </nav>
 
     <section onclick="hideNav();">
+        <div id="map"> </div>
+
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsP83RrbLdZGFINRp_CNPCr2x3wdrm54E&callback=initMap&v=weekly" async></script>
     </section>
 </body>
