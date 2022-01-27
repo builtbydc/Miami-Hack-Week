@@ -111,7 +111,7 @@ header {
     display: block;
     width: 100vw;
     height: 5rem;
-    box-shadow: 0 1px 0 0 var(--clr-blk);
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.255);
     background-color: var(--clr-wht);
 }
 
@@ -146,14 +146,8 @@ header a {
     color: var(--clr-blk);
 }
 
-header h1 {
-    font-family: "pacifico";
-    font-size: 2rem;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    padding-left: 1rem;
-    cursor: pointer;
+header img {
+    height: 5rem;
 }
 
 header p {
