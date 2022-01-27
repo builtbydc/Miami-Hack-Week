@@ -40,6 +40,49 @@ body {
     background-color: white;
 }
 
+@keyframes hide-splash-screen {
+    to {
+        opacity: 0;
+        z-index: -3;
+    }
+}
+
+#splash-screen {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 100%;
+    animation: hide-splash-screen .2s linear 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#splash-screen * {
+    margin: 1rem;
+}
+
+#splash-screen img {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 5vw;
+}
+
+#splash-screen h1 {
+    font-family: "pacifico";
+    font-size: 2rem;
+}
+
+#splash-screen p {
+    font-size: 1rem;
+}
+
 header {
     font-size: 0;
     display: block;
