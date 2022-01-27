@@ -1,3 +1,9 @@
+:root {
+    --clr-wht: #ffffff;
+    --clr-blk: #000000;
+    --clr-act: gainsboro;
+}
+
 @font-face {
     font-family: "pacifico";
     src: url("./pacifico.ttf");
@@ -20,7 +26,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: var(--clr-blk);
 }
 
 html,
@@ -37,7 +43,7 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: white;
+    background-color: var(--clr-wht);
 }
 
 @keyframes hide-splash-screen {
@@ -54,7 +60,7 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: gainsboro;
+    background-color: var(--clr-act);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,6 +72,7 @@ body {
 
 #splash-screen * {
     margin: 1rem;
+    color: var(--clr-blk);
 }
 
 #splash-screen img {
@@ -88,8 +95,8 @@ header {
     display: block;
     width: 100vw;
     height: 5rem;
-    box-shadow: 0 1px 0 0 black;
-    background-color: white;
+    box-shadow: 0 1px 0 0 var(--clr-blk);
+    background-color: var(--clr-wht);
 }
 
 header>div {
@@ -109,18 +116,18 @@ div.w20 {
 }
 
 header p:hover {
-    background-color: gainsboro;
+    background-color: var(--clr-act);
 }
 
 header p:active,
 header h1:active {
-    background-color: black;
-    color: white;
+    background-color: var(--clr-blk);
+    color: var(--clr-wht);
 }
 
 header a {
     text-decoration: none;
-    color: black;
+    color: var(--clr-blk);
 }
 
 header h1 {
@@ -141,8 +148,9 @@ header p {
     width: 100%;
     align-items: center;
     justify-content: center;
-    box-shadow: -1px 0 0 0 black;
+    box-shadow: -1px 0 0 0 var(--clr-blk);
     cursor: pointer;
+    color: var(--clr-blk);
 }
 
 nav {
@@ -150,8 +158,8 @@ nav {
     top: 5rem;
     z-index: -1;
     width: 100vw;
-    background-color: white;
-    box-shadow: 0 1px 0 0 black;
+    background-color: var(--clr-wht);
+    box-shadow: 0 1px 0 0 var(--clr-blk);
 }
 
 nav.hidden {
@@ -162,19 +170,19 @@ nav>a {
     display: block;
     padding: 1rem;
     text-decoration: none;
-    background-color: white;
-    color: black;
-    box-shadow: 0 -1px 0 0 black;
+    background-color: var(--clr-wht);
+    color: var(--clr-blk);
+    box-shadow: 0 -1px 0 0 var(--clr-blk);
     cursor: pointer;
 }
 
 nav>a:hover {
-    background-color: gainsboro;
+    background-color: var(--clr-act);
 }
 
 nav>a:active {
-    background-color: black;
-    color: white;
+    background-color: var(--clr-blk);
+    color: var(--clr-wht);
 }
 
 section {
