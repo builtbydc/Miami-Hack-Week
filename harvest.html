@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script src="./script.js"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./script.js"></script>
+
     <link rel="manifest" href="./manifest.webmanifest" crossorigin="use-credentials">
 
     <link rel="icon" href="./favicon.ico">
@@ -21,11 +26,20 @@
         <p>Gather People</p>
         <p>Gather Together</p>
     </div>
+    <body>
+        <div id="map"></div>
+    
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsP83RrbLdZGFINRp_CNPCr2x3wdrm54E&callback=initMap&v=weekly"
+          async
+        ></script>
+
+    </body>
     <div id="background"></div>
     <header>
         <div class="w80">
-            <a href="">
-                <img src="./logo.png" alt="Gathering logo">
+                <h1><a href="index.html">Gathering</a></h1>
             </a>
         </div>
         <div class="w20">
@@ -34,7 +48,7 @@
     </header>
 
     <nav id="nav-menu" class="hidden">
-        <a href="./harvest.html">The Harvest</a>
+        <a href=" ">Link</a>
         <a href=" ">Link</a>
         <a href=" ">Link</a>
 
