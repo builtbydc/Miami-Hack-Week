@@ -33,7 +33,15 @@
 body {
     background-color: var(--clr-blk);
 }
+#map {
+    position: absolute;
+    z-index: 1000;
+    top: 10vw;
+    left: 25vw;
+    width: 50vw;
+    height: 75vh;
 
+}
 html,
 body {
     height: 100vh;
