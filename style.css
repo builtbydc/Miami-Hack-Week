@@ -65,11 +65,12 @@ div.w20 {
     width: 20vw;
 }
 
-header p.icon:hover {
+header p:hover {
     background-color: gainsboro;
 }
 
-header p.icon:active {
+header p:active,
+header h1:active {
     background-color: black;
     color: white;
 }
@@ -83,20 +84,13 @@ header h1 {
     font-family: "pacifico";
     font-size: 2rem;
     display: flex;
-    height: calc(100% - 1rem);
+    height: 100%;
     align-items: center;
     padding-left: 1rem;
     cursor: pointer;
 }
 
-header p.subtitle {
-    font-size: 1rem;
-    font-family: "pacifico";
-    color: black;
-    height: 1rem;
-}
-
-header p.icon {
+header p {
     font-family: "dripicons";
     font-size: 1.5rem;
     display: flex;
