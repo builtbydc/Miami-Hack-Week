@@ -213,8 +213,13 @@ section {
     overflow: scroll;
 }
 
+section > p {
+    margin: 1rem 2rem;
+}
+
 section img {
-    width: 100vw;
+    width: calc(100vw - 4rem);
+    margin: 0 2rem;
 }
 
 section#login-box {
