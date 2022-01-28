@@ -213,7 +213,7 @@ section {
     overflow: scroll;
 }
 
-section>img {
+section img {
     width: 100vw;
 }
 
