@@ -167,7 +167,6 @@ header p {
     width: 100%;
     align-items: center;
     justify-content: center;
-    box-shadow: -1px 0 0 0 var(--clr-blk);
     cursor: pointer;
     color: var(--clr-blk);
 }
@@ -238,7 +237,7 @@ div#login-box-square {
     flex-direction: column;
 }
 
-div#login-box-square>h1, div#login-box-square>div {
+div#login-box-square>img, div#login-box-square>div {
     display: block;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -246,10 +245,22 @@ div#login-box-square>h1, div#login-box-square>div {
 
 div#login-box-square input {
     width: 90%;
+    height: 2.5rem;
     border-radius: 1rem;
     border: 0;
     margin-top: .25rem;
     margin-bottom: .25rem;
   padding: .75rem 1.25rem;
   box-sizing: border-box;
+}
+
+#waving-grass {
+    position: absolute;
+    z-index: -2;
+    top: 5rem;
+    height: calc(100vh - 5rem);
+}
+
+img#status {
+    width:53vw
 }
