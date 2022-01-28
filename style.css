@@ -210,4 +210,10 @@ section {
     z-index: -2;
     height: calc(100vh - 5rem);
     width: 100vw;
+
+    overflow: scroll;
+}
+
+section img {
+    width: 100vw;
 }
