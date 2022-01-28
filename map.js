@@ -7,7 +7,7 @@ var options = {
 };
 let global_lat = 25.9420;
 let global_lng = -80.2456;
-let global_zoom = 8;
+let global_zoom = 16;
 
 function success(pos) {
     var crd = pos.coords;
@@ -26,7 +26,7 @@ navigator.geolocation.getCurrentPosition(success, error, options);
 function initMap(lat, long) {
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: lat, lng: long },
-        zoom: 8,
+        zoom: 12,
         minZoom: 2,
         panControl: true,
         zoomControl: true,
@@ -37,17 +37,5 @@ function initMap(lat, long) {
         rotateControl: true,
         fullscreenControl: false
     });
-
-    google.maps.event.addListener(map, 'click', function(event) {
-        placeMarker(event.latLng);
-    });
 }
 
-function placeMarker(location) {
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map
-    });
-
-    map.setCenter(location);
-}
