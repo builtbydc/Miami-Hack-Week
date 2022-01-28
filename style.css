@@ -253,7 +253,14 @@ div#login-box-square input {
   padding: .75rem 1.25rem;
   box-sizing: border-box;
 }
+#article1text {
+    margin-bottom: 1rem;
+}
 
+#foodshare
+{
+    top: auto;
+}
 #waving-grass {
     position: absolute;
     z-index: -2;

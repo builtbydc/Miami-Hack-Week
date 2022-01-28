@@ -23,6 +23,9 @@ function error(err) {
 
 navigator.geolocation.getCurrentPosition(success, error, options);
 
+const labels = "g";
+let labelIndex = 0;
+
 function initMap(lat, long) {
     map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: lat, lng: long },
@@ -37,5 +40,19 @@ function initMap(lat, long) {
         rotateControl: true,
         fullscreenControl: false
     });
+    google.maps.event.addListener(map, "click", (event) => {
+        addMarker(event.latLng, map);
+      });
+      addMarker(bangalore, map);
 }
+function addMarker(location, map) {
+    // Add the marker at the clicked location, and add the next-available label
+    // from the array of alphabetical characters.
+    new google.maps.Marker({
+      position: location,
+      label: labels[labelIndex++ % labels.length],
+      map: map,
+    });
+  }
+
 
