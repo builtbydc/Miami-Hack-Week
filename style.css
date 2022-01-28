@@ -217,3 +217,39 @@ section {
 section img {
     width: 100vw;
 }
+
+section#login-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#login-box-square {
+    width: 75vw;
+
+    height: 75vw;
+
+    border-radius: 5vw;
+    
+    background-color: var(--clr-act);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div#login-box-square>h1, div#login-box-square>div {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+div#login-box-square input {
+    width: 90%;
+    border-radius: 1rem;
+    border: 0;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+  padding: .75rem 1.25rem;
+  box-sizing: border-box;
+}
