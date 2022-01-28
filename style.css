@@ -217,6 +217,10 @@ section > p {
     margin: 1rem 2rem;
 }
 
+section > h1 {
+    margin: 1rem 2rem;
+}
+
 section img {
     width: calc(100vw - 4rem);
     margin: 0 2rem;
@@ -257,14 +261,6 @@ div#login-box-square input {
     margin-bottom: .25rem;
   padding: .75rem 1.25rem;
   box-sizing: border-box;
-}
-#article1text {
-    margin-bottom: 1rem;
-}
-
-#foodshare
-{
-    top: auto;
 }
 #waving-grass {
     position: absolute;
